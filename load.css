@@ -31,19 +31,38 @@ section{
 	background-color: gray;
 }
 
+.load1 div{
+	display: inline-block;
+	width: 5px;
+	height: 100%;
+	background-color: white;
+	animation: strechdelay 2s infinite;
+}
 
 
+.load1 .line2{
+	animation-delay: -1.8s;
+}
 
+.load1 .line3{
+	animation-delay: -1.6s;
+}
 
+.load1 .line4{
+	animation-delay: -1.4s;
+}
 
+.load1 .line5{
+	animation-delay: -1.2s;
+}
 
-
-
-
-
-
-
-
+@keyframes strechdelay{
+	  0%,40%,100%{
+	   transform:scaleY(0.4);
+	  }
+	  20%{
+	   transform:scaleY(1);	
+}
 
 
 

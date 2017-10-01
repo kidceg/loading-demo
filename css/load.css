@@ -64,7 +64,7 @@ section{
 }
 
 
-.load2 .outter{
+.load2-outter{
 	position: absolute;
 	border: 4px solid yellow;
 	border-left-color: transparent;
@@ -75,7 +75,7 @@ section{
 	animation:load2-outter 1s linear infinite;
 }
 
-.load2 .inner{
+.load2-inner{
 	position: absolute;
 	top: 20%;
 	left:20% ;
@@ -97,3 +97,51 @@ section{
 	0%{transform: rotate(0deg);}
 	100%{transform: rotate(-360deg);}
 }
+
+
+
+.load3-star{
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	font-size: 50px;
+	color: #80D640;
+	transform: scale(0.7);
+	animation: load3-star 1s alternate infinite; 
+}
+.load3-circle{
+	position: absolute;
+	top: -14px;
+	left:-14px;
+	font-size: 80px;
+	color: #80D640;
+	transform: scale(0.7);
+	animation: load3-circle 1s alternate infinite;
+
+}
+@keyframes load3-star {
+	 0% {transform: scale(0) rotate(0deg);}
+	 100% {transform: scale(0.7) rotate(360deg);}
+}
+
+@keyframes load3-circle {
+	 0% {transform: scale(0.3) rotate(0deg);}
+	 100% {transform: scale(0.7) rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

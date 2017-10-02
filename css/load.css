@@ -129,10 +129,43 @@ section{
 	 100% {transform: scale(0.7) rotate(360deg);}
 }
 
+.load4 div { 
+	position: absolute;
+	width: 6px; 
+	height: 6px; 
+	background: white; 
+	border-radius: 50%; 
+	top: calc(50% - 3px); 
+}
+.jump1 { 
+	left: 0px;
+	animation: jump 0.5s linear alternate infinite; 
+}
+.jump2 { 
+	left: 10px;
+	animation: jump 0.5s 0.1s linear alternate infinite; 
+}
+.jump3 { 
+	left: 20px;
+	animation: jump 0.5s 0.2s linear alternate infinite; 
+}
+.jump4 { 
+	left: 30px;
+	animation: jump 0.5s 0.3s linear alternate infinite; 
+}
+.jump5 { 
+	left: 40px;
+	animation: jump 0.5s 0.4s linear alternate infinite; 
+}
 
-
-
-
+@keyframes jump {
+	 0% {
+		 transform: translateY(0);
+	}
+	 100% {
+		 transform: translateY(-17px);
+	}
+}
 
 
 

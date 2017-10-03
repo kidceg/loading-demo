@@ -168,9 +168,35 @@ section{
 }
 
 
+.load5 div { 
+	position: absolute; 
+	font-size: 80px;
+	color: #F2777A;
+	animation: heart-fly 1s ease alternate infinite; 
+	transform: scale(0.2); }
+.heart1 { 
+	top: -30px; 
+	left: calc(50% - 40px); 
+}
+.heart2 { 
+	top: 0; 
+	left: calc(50% - 40px); 
+}
+.heart3 { 
+	top: calc(50% - 40px); 
+	left: -30px; 
+}
+.heart4 { 
+	top: calc(50% - 40px); 
+	left: 0; 
+}
 
-
-
+@keyframes heart-fly {
+	 0% {
+		 top: calc(50% - 40px);
+		 left: calc(50% - 40px);
+	}
+}
 
 
 

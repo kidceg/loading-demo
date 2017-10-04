@@ -199,8 +199,34 @@ section{
 }
 
 
+.load6 div { 
+	width: 50px;
+	height: 50px;
+	border: 8px double #F99157;	
+	border-radius: 50%;
+	animation: load6 1s linear infinite; 
+}
+.load6 div:before,  .load6 div:after { 
+	content: ""; 
+	position: absolute; 
+	width: 12px; 
+	height: 12px; 
+	background: #F99157; 
+	border-radius: 50%; 
+	bottom: 0; 
+	right: 30px; 
+}
+.load6 div:after { 
+	left: 30px; 
+	top: 0; 
+}
 
-
-
-
+ @keyframes load6 {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(360deg);
+	}
+}
 

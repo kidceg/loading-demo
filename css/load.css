@@ -119,17 +119,17 @@ section{
 	animation: load3-circle 1s alternate infinite;
 
 }
-@keyframes load3-star {
+@keyframes load3-star{
 	 0% {transform: scale(0) rotate(0deg);}
 	 100% {transform: scale(0.7) rotate(360deg);}
 }
 
-@keyframes load3-circle {
+@keyframes load3-circle{
 	 0% {transform: scale(0.3) rotate(0deg);}
 	 100% {transform: scale(0.7) rotate(360deg);}
 }
 
-.load4 div { 
+.load4 div{ 
 	position: absolute;
 	width: 6px; 
 	height: 6px; 
@@ -137,76 +137,76 @@ section{
 	border-radius: 50%; 
 	top: calc(50% - 3px); 
 }
-.jump1 { 
+.jump1{ 
 	left: 0px;
 	animation: jump 0.5s linear alternate infinite; 
 }
-.jump2 { 
+.jump2{ 
 	left: 10px;
 	animation: jump 0.5s 0.1s linear alternate infinite; 
 }
-.jump3 { 
+.jump3{ 
 	left: 20px;
 	animation: jump 0.5s 0.2s linear alternate infinite; 
 }
-.jump4 { 
+.jump4{ 
 	left: 30px;
 	animation: jump 0.5s 0.3s linear alternate infinite; 
 }
-.jump5 { 
+.jump5{ 
 	left: 40px;
 	animation: jump 0.5s 0.4s linear alternate infinite; 
 }
 
-@keyframes jump {
-	 0% {
+@keyframes jump{
+	 0%{
 		 transform: translateY(0);
 	}
-	 100% {
+	 100%{
 		 transform: translateY(-17px);
 	}
 }
 
 
-.load5 div { 
+.load5 div{ 
 	position: absolute; 
 	font-size: 80px;
 	color: #F2777A;
 	animation: heart-fly 1s ease alternate infinite; 
 	transform: scale(0.2); }
-.heart1 { 
+.heart1{ 
 	top: -30px; 
 	left: calc(50% - 40px); 
 }
-.heart2 { 
+.heart2{ 
 	top: 0; 
 	left: calc(50% - 40px); 
 }
-.heart3 { 
+.heart3{ 
 	top: calc(50% - 40px); 
 	left: -30px; 
 }
-.heart4 { 
+.heart4{ 
 	top: calc(50% - 40px); 
 	left: 0; 
 }
 
-@keyframes heart-fly {
-	 0% {
+@keyframes heart-fly{
+	 0%{
 		 top: calc(50% - 40px);
 		 left: calc(50% - 40px);
 	}
 }
 
 
-.load6 div { 
+.load6 div{ 
 	width: 50px;
 	height: 50px;
 	border: 8px double #F99157;	
 	border-radius: 50%;
 	animation: load6 1s linear infinite; 
 }
-.load6 div:before,  .load6 div:after { 
+.load6 div:before,  .load6 div:after{ 
 	content: ""; 
 	position: absolute; 
 	width: 12px; 
@@ -216,17 +216,54 @@ section{
 	bottom: 0; 
 	right: 30px; 
 }
-.load6 div:after { 
+.load6 div:after{ 
 	left: 30px; 
 	top: 0; 
 }
 
- @keyframes load6 {
-	 0% {
+ @keyframes load6{
+	 0%{
 		 transform: rotate(0deg);
 	}
-	 100% {
+	 100%{
 		 transform: rotate(360deg);
 	}
 }
 
+.xu-yuan{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: 6px groove white;
+	border-radius: 50%;
+	animation: load7 0.8s linear infinite;
+}
+
+.glyphicon-star-empty{
+	position: absolute;
+	top: calc(50% - 14px);
+	left: calc(50% - 14px);
+	font-size: 30px;
+	color: white;
+	animation: load7-star 0.8s linear alternate infinite;
+}
+
+@keyframes load7{
+	0%{
+		transform: rotate(0deg);
+	} 
+	100%{
+		transform: rotate(360deg);
+	} 	
+}
+
+@keyframes load7-star{
+	0%{
+		transform: scale(0.7);
+		color: #C3C3C3;
+	}
+	100%{
+		transform: scale(1);
+		color: white;
+	}	
+}

@@ -72,7 +72,7 @@ section{
 	width: 88%;
 	height: 88%;
 	border-radius: 50%;
-	animation:load2-outter 1s linear infinite;
+	animation:run360 1s linear infinite;
 }
 
 .load2-inner{
@@ -85,10 +85,10 @@ section{
 	width: 50%;
 	height: 50%;
 	border-radius: 50%;
-	animation:load2-inner 1s linear infinite;
+	animation: load2-inner 1s linear infinite;
 }
 
-@keyframes load2-outter{
+@keyframes run360{
 	0%{transform: rotate(0deg);}
 	100%{transform: rotate(360deg);}
 }
@@ -204,7 +204,7 @@ section{
 	height: 50px;
 	border: 8px double #F99157;	
 	border-radius: 50%;
-	animation: load6 1s linear infinite; 
+	animation: run360 1s linear infinite; 
 }
 .load6 div:before,  .load6 div:after{ 
 	content: ""; 
@@ -221,22 +221,14 @@ section{
 	top: 0; 
 }
 
- @keyframes load6{
-	 0%{
-		 transform: rotate(0deg);
-	}
-	 100%{
-		 transform: rotate(360deg);
-	}
-}
 
-.xu-yuan{
+.yuan1{
 	position: absolute;
 	width: 50px;
 	height: 50px;
 	border: 6px groove white;
 	border-radius: 50%;
-	animation: load7 0.8s linear infinite;
+	animation: run360 0.8s linear infinite;
 }
 
 .glyphicon-star-empty{
@@ -248,14 +240,7 @@ section{
 	animation: load7-star 0.8s linear alternate infinite;
 }
 
-@keyframes load7{
-	0%{
-		transform: rotate(0deg);
-	} 
-	100%{
-		transform: rotate(360deg);
-	} 	
-}
+
 
 @keyframes load7-star{
 	0%{
@@ -267,3 +252,54 @@ section{
 		color: white;
 	}	
 }
+
+.yuan2{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: 3px dashed white;
+	border-radius: 50%;
+	animation: run360 2s linear alternate infinite;
+}
+
+.load8-inner{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	border: 3px ridge white;
+	border-radius: 50%;
+	animation: load8 2s linear alternate infinite;
+}
+
+@keyframes load8{
+	0%{
+		transform: rotate(0deg);
+		border-radius: 50%;
+	}
+	100%{
+		transform: rotate(360deg);
+		border-radius: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
